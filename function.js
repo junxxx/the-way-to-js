@@ -20,3 +20,24 @@ const increment = function incre(i) {
 }
 
 console.log(increment(0))
+
+// arrow function are always anonymous
+// shorter functions and non-binding of `this` 
+// introduction of arrow function
+const print = a => console.log(a)
+
+print("Hello world")
+
+const add = (x, y) => x+y
+
+print(add(3,4))
+
+const divide = (m, n) => {
+    if (n == 0) {
+        print("n can't be zero")
+        return
+    }
+    return m/n
+}
+
+print(divide(3, 4), divide(4, 0))
